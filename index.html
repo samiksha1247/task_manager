@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: linear-gradient(135deg, #f5f7fa 0%, #eef2f7 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+
+    .card {
+      max-width: 720px;
+      width: 100%;
+      background: white;
+      border-radius: 2rem;
+      padding: 2rem 2rem 2.2rem;
+      box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.01);
+    }
+
+    .icon {
+      font-size: 3.2rem;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      background: linear-gradient(120deg, #1a4d3e, #2c7a5e);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      margin-bottom: 0.75rem;
+    }
+
+    .tagline {
+      color: #4b6a7c;
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+      font-size: 1.05rem;
+      border-bottom: 1px solid #e2edf2;
+      display: inline-block;
+      padding-bottom: 0.3rem;
+    }
+
+    p {
+      color: #2c4758;
+      line-height: 1.5;
+      margin-bottom: 2rem;
+      font-size: 1rem;
+    }
+
+    button {
+      background: #1e6f5c;
+      border: none;
+      color: white;
+      font-weight: 600;
+      padding: 0.7rem 1.8rem;
+      border-radius: 40px;
+      font-size: 1rem;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(30, 111, 92, 0.3);
+      transition: 0.2s;
+    }
+
+    button:hover {
+      background: #0f5948;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 18px rgba(30, 111, 92, 0.25);
+    }
+
+    footer {
+      margin-top: 2rem;
+      font-size: 0.75rem;
+      color: #809aab;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="icon">✨</div>
+    <h1>simple & clean</h1>
+    <div class="tagline">just a moment of clarity</div>
+    <p>
+      This is a short, minimal HTML page.<br>
+      It uses a soft card layout, a subtle gradient background,<br>
+      and a friendly button — all in one small file.
+    </p>
+    <button id="clickBtn">say hello 👋</button>
+    <footer>
+      🌿 lightweight · responsive · no extra baggage
+    </footer>
+  </div>
+
+  <script>
+    const btn = document.getElementById('clickBtn');
+    btn.addEventListener('click', () => {
+      alert('Hello! Thanks for the simple click 🙂');
+    });
+  </script>
+</body>
+</html>
